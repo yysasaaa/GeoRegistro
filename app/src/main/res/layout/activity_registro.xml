@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nueva Incidencia"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"/>
+
+        <!-- Título -->
+        <EditText
+            android:id="@+id/etTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título de la incidencia"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Descripción -->
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripcion"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Categoría -->
+        <EditText
+            android:id="@+id/etCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Categoría (ej. Eléctrico, Estructural)"
+            android:inputType="text"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Fecha y Hora (Se llenará solo) -->
+        <TextView
+            android:id="@+id/tvFechaHora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha y Hora: (Calculando...)"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Coordenadas (Se llenará con el GPS luego) -->
+        <TextView
+            android:id="@+id/tvCoordenadas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coordenadas: (Esperando GPS...)"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Botón Guardar -->
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Guardar Incidencia"
+            android:backgroundTint="#00BCD4"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</ScrollView>
